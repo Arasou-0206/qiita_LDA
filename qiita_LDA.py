@@ -56,10 +56,10 @@ lda = gensim.models.ldamodel.LdaModel(
 )
 
 #表示
-plt.figure(figsize=(30,30))
+plt.figure(figsize=(40,40))
 for t in range(lda.num_topics):
     plt.subplot(5,4,t+1)
-    x = dict(lda.show_topic(t,200))
+    x = dict(lda.show_topic(t,300))
     im = WordCloud().generate_from_frequencies(x)
     plt.imshow(im)
     plt.axis("off")

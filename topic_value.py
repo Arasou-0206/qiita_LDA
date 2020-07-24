@@ -1,12 +1,7 @@
 import gensim
 import re
 from gensim.models import LdaModel
-import numpy as np
-import matplotlib.pyplot as plt
-import glob
-from tqdm import tqdm
 import pickle
-from collections import defaultdict
 
 with open('dictionary.pkl', 'rb') as f:
     dictionary = pickle.load(f)
